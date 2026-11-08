@@ -8,4 +8,6 @@ Thumbs.db
 viewport_*.png
 test_*.png
 attendance_desktop_preview.png
+*_reference.png
+mobile_*.png
 *.zip

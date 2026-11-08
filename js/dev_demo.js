@@ -433,12 +433,33 @@
         }
     }
 
-    // 7. Initialize on DOM ready
+    // 7. Mobile Floating Menu Action Handler
+    function setupMobileFabMenu() {
+        var fab = document.getElementById('btnMobileFabMenu');
+        if (fab) {
+            fab.onclick = function (e) {
+                if (e) e.preventDefault();
+                var more = document.querySelector('.more');
+                if (more) {
+                    more.click();
+                } else if ($ && $('.side-bar').length) {
+                    $('.side-bar').show().animate({ right: 0 });
+                    $('.close-btn-top').show().animate({ right: 300 });
+                    $('body').addClass('no-scroll');
+                    $('.side-bar-overlay').show();
+                }
+                return false;
+            };
+        }
+    }
+
+    // 8. Initialize on DOM ready
     function init() {
         injectDevBanner();
         setupDemoLogin();
         setupDemoLogout();
         enforceDemonstrationMetrics();
+        setupMobileFabMenu();
     }
 
     if (document.readyState === 'loading') {

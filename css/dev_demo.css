@@ -200,3 +200,83 @@ body.has-dev-banner {
         width: 100%;
     }
 }
+
+/* ==========================================================================
+   MOBILE ATTENDANCE CHART & FLOATING ACTION BUTTON ENHANCEMENTS
+   Exact replica of Sri Sri University mobile student portal
+   ========================================================================== */
+
+.mobile-fab-menu {
+    display: none;
+}
+
+.attendance-chart-container {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height: 980px;
+    min-height: 980px;
+    background: #ffffff;
+    padding: 15px 12px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 768px) {
+    /* Mobile Red Circular Floating Menu Button matching ground-truth screenshot */
+    .mobile-fab-menu {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 14px;
+        right: 14px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #d44c4c;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+        border: none;
+        z-index: 99999;
+        cursor: pointer;
+        padding: 0;
+        outline: none;
+        transition: transform 0.15s ease, background-color 0.15s ease;
+    }
+    .mobile-fab-menu:active {
+        transform: scale(0.92);
+        background-color: #c0392b;
+    }
+    .mobile-fab-menu .bar {
+        display: block;
+        width: 22px;
+        height: 2.5px;
+        margin: 2px 0;
+        background-color: #ffffff;
+        border-radius: 2px;
+    }
+
+    /* Mobile Chart Section — Exact Full Viewport Replica */
+    .attendance-chart-container {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        height: 820px !important;
+        min-height: 820px !important;
+        padding: 8px 4px !important;
+        border: 1px solid #eef2f6;
+        box-shadow: none;
+        overflow: hidden;
+    }
+
+    #attendance-chart {
+        width: 100% !important;
+        height: 820px !important;
+    }
+
+    /* Clean mobile header alignment */
+    .atten-head {
+        margin-top: 10px;
+        margin-bottom: 12px;
+    }
+}

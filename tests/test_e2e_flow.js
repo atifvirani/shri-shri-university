@@ -1,6 +1,11 @@
 const { chromium } = require('playwright-core');
+const path = require('path');
+const server = require(path.join(__dirname, '..', 'server.js'));
 
 async function runEndToEndTest() {
+    if (!server.listening) {
+        await new Promise(r => server.listen(8080, '127.0.0.1', r));
+    }
     console.log('>>> STARTING COMPLETE E2E INTEGRATION & ERROR HANDLING TEST');
     const browser = await chromium.launch({
         executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
@@ -137,7 +142,9 @@ async function runEndToEndTest() {
     console.log('URL after clicking Logout:', page.url());
 
     await browser.close();
+    try { server.close(); } catch (e) {}
     console.log('\n>>> COMPLETE E2E TEST COMPLETED WITH 100% SUCCESS!');
+    process.exit(0);
 }
 
 runEndToEndTest().catch(err => {

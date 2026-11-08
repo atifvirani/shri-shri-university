@@ -813,16 +813,26 @@ if (document.getElementById("attendance-chart")) {
                     meta.data.forEach(function (element, index) {
                         var val = dataset.data[index];
                         if (val && val > 0) {
-                            ctx.fillStyle = afillStyle;
-                            var fontSize = afontSize;
-                            var fontStyle = 'bold';
-                            var fontFamily = 'Lato, sans-serif';
-                            ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
-                            var dataString = val.toString();
-                            ctx.textAlign = atextAlign;
-                            ctx.textBaseline = atextBaseline;
                             var position = element.tooltipPosition();
-                            ctx.fillText(dataString, position.x - 5, position.y);
+                            var dataString = val.toString();
+                            var isMobile = (window.innerWidth <= 768);
+                            var fontSize = isMobile ? 11 : 11;
+                            var fontStyle = 'bold';
+                            var fontFamily = 'Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+                            ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
+                            ctx.textBaseline = 'middle';
+
+                            // If bar is wide enough (>= 25%), place text inside in crisp white
+                            // If bar is narrow (< 25%), place text right at the tip in dataset color
+                            if (val >= 25) {
+                                ctx.fillStyle = '#ffffff';
+                                ctx.textAlign = 'right';
+                                ctx.fillText(dataString, position.x - 3, position.y);
+                            } else {
+                                ctx.fillStyle = dataset.backgroundColor;
+                                ctx.textAlign = 'left';
+                                ctx.fillText(dataString, position.x + 3, position.y);
+                            }
                         }
                     });
                 }
@@ -838,6 +848,7 @@ if (document.getElementById("attendance-chart")) {
             try { window.myBar.destroy(); } catch (e) {}
         }
         Chart.defaults.global.tooltips.enabled = false;
+        var isMobile = (window.innerWidth <= 768);
         window.myBar = new Chart(ctx, {
             type: aChartType,
             data: barChartData,
@@ -848,19 +859,19 @@ if (document.getElementById("attendance-chart")) {
                     position: 'top',
                     display: true,
                     labels: {
-                        boxWidth: 40,
-                        fontSize: 13,
-                        fontFamily: 'Lato, sans-serif',
+                        boxWidth: isMobile ? 32 : 38,
+                        fontSize: isMobile ? 12 : 13,
+                        fontFamily: 'Lato, -apple-system, BlinkMacSystemFont, sans-serif',
                         fontColor: '#333',
-                        padding: 15
+                        padding: isMobile ? 10 : 15
                     }
                 },
                 layout: {
                     padding: {
-                        top: 15,
-                        bottom: 15,
-                        left: 5,
-                        right: 15
+                        top: isMobile ? 8 : 15,
+                        bottom: isMobile ? 10 : 15,
+                        left: isMobile ? 0 : 5,
+                        right: isMobile ? 10 : 15
                     }
                 },
                 scales: {
@@ -870,23 +881,24 @@ if (document.getElementById("attendance-chart")) {
                             min: 0,
                             max: 100,
                             stepSize: 20,
-                            fontSize: 13,
-                            fontFamily: 'Lato, sans-serif',
-                            fontColor: '#444'
+                            fontSize: isMobile ? 11 : 13,
+                            fontFamily: 'Lato, -apple-system, BlinkMacSystemFont, sans-serif',
+                            fontColor: '#666'
                         },
                         gridLines: {
                             color: '#e5e5e5',
-                            zeroLineColor: '#333',
+                            zeroLineColor: '#555',
                             drawBorder: true
                         }
                     }],
                     yAxes: [{
-                        barPercentage: 0.85,
-                        categoryPercentage: 0.9,
+                        barPercentage: 0.88,
+                        categoryPercentage: 0.86,
                         ticks: {
-                            fontSize: 12,
-                            fontFamily: 'Lato, sans-serif',
-                            fontColor: '#333'
+                            fontSize: isMobile ? 11 : 12,
+                            fontFamily: 'Lato, -apple-system, BlinkMacSystemFont, sans-serif',
+                            fontColor: '#333',
+                            padding: isMobile ? 4 : 8
                         },
                         gridLines: {
                             display: true,
