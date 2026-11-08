@@ -1,0 +1,318 @@
+
+@media only screen and (max-width:1920px){
+	.mentor-dtl{
+		width:50%;
+	}
+	
+	.mentor-img{
+		width:70%;
+	}
+	
+	.buttons{
+		width:100%;
+		text-align:center;	
+	}
+	.buttons .motivate-btn{
+		display:inline-block;
+		float:none;	
+	}
+}
+
+@media only screen and (max-width:1650px){
+	
+	
+	#login-main{
+		width:540px;
+		
+	}
+	
+	
+	
+	.form{
+		width:60%;	
+	}
+	
+	
+	
+	.container-txt h1{
+		font-size:24px;	
+	}
+	
+	.container-txt{
+		width:50%;	
+	}
+
+
+}
+
+@media only screen and (max-width:1400px){
+	.container-txt{
+		width:50%;	
+	}
+
+}
+
+@media only screen and (max-width:1366px) and (max-height:600px){
+	.mentor-img{
+		width:80%;	
+	}
+}
+
+@media only screen and (max-width:1200px){
+	.container-txt h1{
+		font-size:30px;	
+	}
+	
+	.container-txt p{
+		font-size:15px;	
+	}
+}
+
+@media only screen and (max-width:1100px){
+	#login-main{
+		padding-top:7%;	
+	}
+	
+	.mentor-dtl{
+		right:50px;	
+	}
+	
+	.half-page{
+		width:60%;
+	}
+}
+
+
+
+@media only screen and (max-width:1000px){
+
+	
+	.mentor-dtl{
+		right:20px;	
+	}
+	
+	.motivate-btn img{
+		width:180px !important;	
+	}
+	
+	.buttons .motivate-btn:last-child img{
+		width:220px !important;	
+	}
+	
+	.buttons{
+		width:100%;
+		text-align:center;	
+	}
+	
+	.buttons .motivate-btn{
+		float:none;
+		display:inline-block;	
+	}
+	
+	.temproary-div{
+		display:none;	
+	}
+}
+
+
+
+@media only screen and (max-width:980px){
+	.container-txt h1{
+		font-size:20px;	
+	}
+	
+	#login-main{
+		padding-top:8%;	
+	}
+	
+	
+}
+
+@media only screen and (max-width:900px){
+	.mentor-dtl{
+		right:0;
+		width:55%;
+	}
+	
+	.buttons{
+		width:auto;
+		float:right;
+	}
+	
+	.buttons .motivate-btn{
+		width:auto;
+		float:left;
+		display:inline-block;
+		clear:both;
+		text-align:center;
+		margin-right:20%;		
+	}
+	
+	.mentor-img{
+		float:right;	
+	}
+	
+}
+
+
+
+@media only screen and (max-width:850px){
+	.container-txt p{
+		display:none;	
+	}
+	
+	.container-txt{
+		bottom:180px;
+		width:40%;	
+	}
+	
+	.container-txt h1{
+		font-size:30px;	
+	}
+	
+	#login-main{
+		padding-top:9%;	
+	}
+	
+
+	
+
+	
+	.mentor-img{
+		width:90%;
+	}
+	
+}
+
+@media only screen and (max-height:768px){
+	
+	
+	
+	
+	.mentor-img{
+		width:75%;
+	}
+	
+}
+
+@media only screen and (max-height:700px){
+	.buttons .motivate-btn{
+		margin-right:0;	
+		float:right;
+	}
+
+}
+
+@media only screen and (max-height:670px){
+	.mentor-img{
+		width:75%;
+	}	
+	
+	
+
+	
+	
+}
+
+
+@media only screen and (max-width:760px){
+	.container-txt h1{
+		font-size:25px;	
+		padding:15px;
+	}
+}
+
+@media only screen and (max-width:680px){
+	.container-txt h1{
+		display:none;
+	}
+	
+	#login-main{
+		padding-top:12%;	
+	}
+}
+
+@media only screen and (max-width:640px){
+
+	.form{
+		display:inline-block;
+		float:none;767
+		width:90%;	
+	}
+	
+	.login-bg p{
+		width:90%;	
+		display:inline-block;
+		margin:auto;
+	}
+	
+	
+	
+	
+	a.video{
+		display:none;	
+	}
+	
+	a.hide{
+		display:block;	
+	}
+	
+	a.btn{
+		display:inline-block;
+		float:none;
+		margin-top:10px;
+		letter-spacing:0;
+		padding:10px 15px;
+	}
+	
+	.forgot{
+		float:right;
+		clear:none;	
+	}
+
+	
+
+	
+
+	
+	.mentor-dtl{
+		display:none;	
+	}
+	
+	.buttons-grp{
+		display:none;
+
+	}
+}
+
+@media only screen and (max-width:480px){
+	
+}
+
+@media only screen and (max-width:400px){
+	#login-main{
+		width:90%;	
+		padding:30px 0 0;
+	}
+	
+	.login-bg p{
+		display:none;	
+	}
+	
+	a.hide{
+		display:none;	
+	}
+	
+	.login-bg h3{
+		font-size:20px;
+		
+		margin:0;
+	}
+	
+	
+
+}
+
+
+
+

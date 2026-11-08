@@ -1,0 +1,107 @@
+﻿.pass-eye{
+    position: absolute;
+  font-size: 20px;
+  top: 7px;
+  right: 10px;
+  color: #666;
+}
+
+#txtpass{
+    padding-right: 30px;
+}
+
+@media (max-width:767px) {
+    .login-bg .logo {
+        display:none;
+    }
+
+  
+
+    .login-bg .logo-mob {
+        display:block;
+        padding:15px 0;
+        margin-bottom:15px;
+        border-bottom:#ccc solid thin;
+        width:100%;
+        text-align:center;
+    }
+
+    #login-main {
+        width:100% !important;
+        height:100% !important;
+        background:rgba(0,0,0,0.7);
+        padding: 0 !important;
+    }
+
+    .login-inr {
+        padding:0;
+    }
+
+    .login-bg {
+        width:100%;
+        padding:0 50px !important;
+        background:none;
+        height:auto;
+        background:#fff;
+        padding:50px;
+        width:500px;
+        max-width:90%;
+        margin:auto;
+        align-items:center;
+    }
+
+    .login-bg-1 {
+        display:none;
+    }
+    .form {
+      width: 100% !important;
+    }
+
+    .login-bg p {
+        width:100%;
+        text-align:center;
+    }
+
+    .last-form-group .btn{
+        width:100%;
+    }
+
+    .last-form-group {
+        flex-direction:column;
+        gap:10px
+    }
+
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width:640px) {
+    .login-bg p {
+        margin-bottom:10px !important;
+
+    }
+
+    .bfi-logo {
+        max-width:100%;
+    }
+}
+
+@media (max-width:575px) {
+    .login-bg {
+        width: 100%;
+        padding: 0 20px !important;
+    }
+}
+
+@media (max-width:400px) {
+    .login-bg h3 {
+        font-size: 40px;
+        padding:0 0 10px;
+    }
+}

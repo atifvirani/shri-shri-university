@@ -1,0 +1,24 @@
+{
+  "name": "ssu-portal-local-dev",
+  "version": "1.0.0",
+  "description": "SSU Student Portal - Isolated Local Development & Demonstration Version",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tests/test_dev_suite.js",
+    "build": "node build.js"
+  },
+  "keywords": [
+    "frontend-demonstration",
+    "synthetic-attendance",
+    "chartjs",
+    "isolated-dev"
+  ],
+  "author": "Antigravity Engineering",
+  "license": "ISC",
+  "devDependencies": {
+    "pixelmatch": "^8.0.0",
+    "playwright-core": "^1.65.0",
+    "pngjs": "^7.0.0"
+  }
+}

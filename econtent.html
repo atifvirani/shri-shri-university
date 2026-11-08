@@ -1,0 +1,755 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="ctl00_Head1"><title>
+	Sri Sri University
+</title><link rel="shortcut icon" type="image/png" href="cdn.e.srisriuniversity.edu.in/images/logo_white.png"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery_2.1.3.js"></script>
+    
+    <script type="text/javascript" src="js/notification.js"></script>
+    <!--quick menu sortable toogle-->
+    <script type="text/javascript" src="js/jquery_ui.min_1.10.3.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"><link href="css/style.css" rel="stylesheet" type="text/css"><link href="font/font.css" rel="stylesheet" type="text/css"><link href="css/media_query.css" rel="stylesheet" type="text/css">
+    <script src="inc/owl_carosuel/owl.carousel.js" type="text/javascript"></script>
+    <link href="inc/owl_carosuel/owl.carousel.css" rel="stylesheet" type="text/css"><link href="inc/owl_carosuel/owl.transitions.css" rel="stylesheet" type="text/css">
+    <script src="inc/custom_scroll_bar/jquery.mcustomscrollbar.concat.min.js" type="text/javascript"></script>
+    <link href="inc/custom_scroll_bar/jquery.mcustomscrollbar.css" rel="stylesheet" type="text/css">
+    <script src="inc/bar_graph/material_charts.js" type="text/javascript"></script>
+    <link href="inc/bar_graph/material_charts.css" rel="stylesheet" type="text/css">
+    <script src="inc/custom_scroll_bar/jquery.mcustomscrollbar.concat.min.js" type="text/javascript"></script>
+    <link href="inc/custom_scroll_bar/jquery.mcustomscrollbar.css" rel="stylesheet" type="text/css">
+    <script src="js/moment.js" type="text/javascript"></script>
+    <script src="inc/bootstrap_datepicker/bootstrap_datepicker.js" type="text/javascript"></script>
+    <link href="inc/bootstrap_datepicker/bootstrap_datepicker.css" rel="stylesheet" type="text/css"><link href="inc/bootstrap_select2/css/select2.css" rel="stylesheet" type="text/css"><link href="inc/bootstrap_select2/css/select2_bootstrap.css" rel="stylesheet" type="text/css"><link href="css/inpt_styles.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    
+    
+    <link rel="stylesheet" type="text/css" href="css/dev_demo.css">`n</head>
+
+<body id="ctl00_masterBody" class="inner-page">
+    <div class="wrapper">
+        <form name="aspnetForm" method="post" action="./Econtent.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTI2NzI4NjkxMw8WAh4Kc2VhcmNoRmxhZwUBMBYCZg9kFgICAw9kFgICAQ9kFhoCAg8WAh4HVmlzaWJsZWhkAgMPFgIfAWhkAgQPFgIfAWhkAgUPFgIfAWhkAgYPFgIfAWhkAgcPFgIfAWhkAggPFgIfAWhkAgkPFgIfAWhkAgoPFgIfAWhkAgsPFgIfAWhkAg0PDxYCHghJbWFnZVVybAUifi9oYW5kbGVyL2dldEltYWdlLmFzaHg/U0lEPTEwMjk0NWRkAg4PDxYCHgRUZXh0BQ9Sb2hpdCBLdW1hciBEYXNkZAIkD2QWAgIDD2QWAmYPZBYGAhEPEA8WBh4ORGF0YVZhbHVlRmllbGQFCFN0cmVhbUlEHg1EYXRhVGV4dEZpZWxkBQ9TdHJlYW1TaG9ydE5hbWUeC18hRGF0YUJvdW5kZ2QQFZ4BBkIuQXJjaA1CLkNvbShIb25zKS0zDUIuQ29tKEhvbnMpLTQPQi5jb20oSG9ucy4pT0RMEUIuU2MgRGF0YSBTY2llbmNlUUIuU2MuIChBcnRpZmljaWFsIEludGVsbGlnZW5jZSkgd2l0aCBzcGVjaWFsaXphdGlvbiBpbiBBbmltYXRpb24gJiBWaXN1YWwgRWZmZWN0cz5CLlNDLiAoQ09NUFVURVIgU0NJRU5DRSkgd2l0aCBzcGVjaWFsaXphdGlvbiBpbiBBSSBBcHBsaWNhdGlvbiVCLlNjLiAoSG9ucy4pIEFncmlidXNpbmVzcyBNYW5hZ2VtZW50GUIuU2MuIChIb25zLikgQWdyaWN1bHR1cmUeQi5TYy4gKEhvbnMuKSBDb21wdXRlciBTY2llbmNlIEIuU2MuIChIb25zLikgQ29tcHV0ZXIgU2NpZW5jZSAzKUIuU2MuIChIb25zLikgQ29tcHV0ZXIgU2NpZW5jZSAzIFlFQVIgRk9TK0IuU2MuIChIb25zLikgRm9vZCwgTnV0cml0aW9uIGFuZCBEaWV0ZXRpY3NQQi5TYy4gKEhvbnMuKSBGb3JlbnNpYyBTY2llbmNlIFNwZWNpYWxpemF0aW9uOiBEaWdpdGFsIEZvcmVuc2ljICYgQ3liZXIgRm9yZW5zaWNXQi5TYy4gKEhvbnMuKSBGb3JlbnNpYyBTY2llbmNlIFNwZWNpYWxpemF0aW9uOiBEaWdpdGFsIEZvcmVuc2ljICYgQ3liZXIgRm9yZW5zaWMgKEhWRVQpGkIuU2MuIChIb25zLikgSG9ydGljdWx0dXJlOEIuU2MuIChIb25zLikgT3B0b21ldHJ5IFRlY2hub2xvZ3kgKEFwcHJlbnRpY2UgRW1iZWRkZWQpD0IuU2MuIGluIFlvZ2EgMw9CLlNjLiBpbiBZb2dhIDQNQi5TYy4gTnVyc2luZxBCLlNjLiBPc3Rlb3BhdGh5NkIuU2MuKEhvbnMuKSBQc3ljaG9sb2d5IChDb250ZW1wbGF0aXZlIFN0dWRpZXMpLTQgWWVhciRCLlRFQ0ggSU4gQ1NFIChTUEVDSUFMSVpBVElPTiBJTiBEUyk/Qi5UZWNoLiBFbGVjdHJpY2FsIEVuZ2luZWVyaW5nIHdpdGggc3BlY2lhbGl6YXRpb24gaW4gQUkgYW5kIEVWTUIuVGVjaC4gRWxlY3RyaWNhbCBFbmdpbmVlcmluZyB3aXRoIHNwZWNpYWxpemF0aW9uIGluIEFJIGFuZCBSZW5ld2FibGUgRW5lcmd5L0IuVGVjaC4gaW4gQ1NFIChDb21wdXRlciBTY2llbmNlICYgRW5naW5lZXJpbmcpLkIuVGVjaC4gaW4gQ1NFLVNwZWNpYWxpemF0aW9uIGluIEFJICYgTUwgKElCTSlXQi5UZWNoLiBpbiBDU0UtU3BlY2lhbGl6YXRpb24gaW4gQW5pbWF0aW9uIGFuZCBWRlgoSW50ZXJuc2hpcCBCYXNlZCktKEhpdGVjaCBBbmltYXRpb24pVEIuVGVjaC4gaW4gQ1NFLVNwZWNpYWxpemF0aW9uIGluIEN5YmVyIFNlY3VyaXR5IGFuZCBDeWJlciBEZWZlbnNlIChDeWJlciBEb2pvICYgVENTKZMBQi5UZWNoLiBpbiBFbGVjdHJpY2FsIEVuZ2luZWVyaW5nLSBTcGVjaWFsaXphdGlvbiBpbiBBcnRpZmljaWFsIEludGVsbGlnZW5jZSAmIEVsZWN0cmljYWwgVmVoaWNsZSAoRWxlY3RyaWNhbCkgYW5kIFJlbmV3YWJsZSBFbmVyZ3kgKEwmVCBhbmQgSW50ZWwpcUIuVGVjaC4gaW4gRWxlY3Ryb25pY3MgYW5kIENvbW11bmljYXRpb24gRW5naW5lZXJpbmctIFNwZWNpYWxpemF0aW9uIGluIEFydGlmaWNpYWwgSW50ZWxsaWdlbmNlLCBWTFNJIENoaXAgRGVzaWduTkIuVGVjaC4gaW4gTUUtIFNwZWNpYWxpemF0aW9uIGluIEFJLCBSb2JvdGljcyAmIEF1dG9tYXRpb24gYW5kIEVWIChNZWNoYW5pY2FsKRRCQSAoSG9ucy4pIEVuZ2xpc2ggMxRCQSAoSG9ucy4pIEVuZ2xpc2ggNBVCQUNIRUxPUiBPRiBGSU5FIEFSVFMhQmFjaGVsb3Igb2YgRmluZSBBcnRzIChBbmltYXRpb24pIUJhY2hlbG9yIG9mIEludGVyaW9yIERlc2lnbiAoQklEKTBCYWNoZWxvciBvZiBOYXR1cm9wYXRoeSBhbmQgWW9naWMgU2NpZW5jZSAoQk5ZUyk6QmFjaGVsb3Igb2YgUGVyZm9ybWluZyBBcnRzIChIaW5kdXN0YW5pIFZvY2FsKSDigJMgMyBZZWFyczBCYWNoZWxvciBvZiBQaHlzaWNhbCBFZHVjYXRpb24gYW5kIFNwb3J0cyAoQlBFUyk1QmFjaGVsb3Igb2YgUGh5c2ljYWwgRWR1Y2F0aW9uIGFuZCBTcG9ydHMg4oCTIDMgWWVhcnMfQkFDSEVMT1IgT0YgUEhZU0lPVEhFUkFQWSAoQlBUKThCQUNIRUxPUiBPRiBWSVNVQUwgQVJUUyBXSVRIIFNQRUNJQUxJWkFUSU9OIElOIFBBSU5USU5HUwRCQU1TB0JCQSBPREwFQkJBLTMFQkJBLTQdQkNBIChBcnRpZmljaWFsIEludGVsbGlnZW5jZSkUQkNBIChDeWJlciBTZWN1cml0eSkFQkNBIDMFQkNBIDQrQkNBIGluIERhdGEgU2NpZW5jZSBhbmQgQW5hbHl0aWNzIOKAkyhIVkVUKRJCRkEgKEFwcGxpZWQgQXJ0cykOQkZBIChQYWludGluZykUQlBBIEhpbmR1c3RhbmkgVm9jYWwSQlBBIE9kaXNzaSBEYW5jZSAzEkJQQSBPZGlzc2kgRGFuY2UgNA5CU0MgKEhPTlMuKSBEUw5CU0MgKEhPTlMuKSBFUxNCU0MgKEhPTlMuKSBQSFlTSUNTFkJzYyBQc3ljaG9sb2d5LSAzIFllYXIVRElQTE9NQSBJTiBQUk9DVE9MT0dZFERvY3RvciBvZiBQaGlsb3NvcGh5A0dOTQRpTUJBHkludGVncmF0ZWQgTS5TYy4gaW4gT3N0ZW9wYXRoeQlNLkEuIFlvZ2ErTS5TYy4gKEFncmljdWx0dXJlKSBBZ3JpY3VsdHVyYWwgU3RhdGlzdGljcx5NLlNjLiAoQWdyaWN1bHR1cmUpIEVudG9tb2xvZ3kvTS5TYy4gKEFncmljdWx0dXJlKSBHZW5ldGljcyBhbmQgUGxhbnQgQnJlZWRpbmcjTS5TYy4gKEFncmljdWx0dXJlKSBQbGFudCBQYXRob2xvZ3kUTS5TYy4gKEhvcnRpY3VsdHVyZSkeTS5TYy4gQWdyaWN1bHR1cmUgQWdyb2ZvcmVzdHJ5IU0uU2MuIEFncmljdWx0dXJlIENyb3AgUGh5c2lvbG9neSRNLlNjLiBBZ3JpY3VsdHVyZSBQbGFudCBCaW9jaGVtaXN0cnkkTS5TYy4gRXhlcmNpc2UgQW5kIFNwb3J0cyBQaHlzaW9sb2d5RE0uU2MuIGluIEFydGlmaWNpYWwgSW50ZWxsaWdlbmNlIGFuZCBNYWNoaW5lIExlYXJuaW5nIChBSS9NTCktKEhWRVQpOU0uU2MuIGluIEN5YmVyIFNlY3VyaXR5ICYgRGlnaXRhbCBGb3JlbnNpY3MgKENTREYpLShIVkVUKRBNLlNjLiBPc3Rlb3BhdGh5KE0uU2MuIFBzeWNob2xvZ3kgKENvbnRlbXBsYXRpdmUgU3R1ZGllcykKTS5TYy4gWW9nYRJNLlNjLiBZb2dhIFRoZXJhcHkpTS5TYy4oQWdyaWN1bHR1cmUpIEFncmljdWx0dXJhbCBFY29ub21pY3MzTS5TYy4oQWdyaWN1bHR1cmUpIEFncmljdWx0dXJhbCBFeHRlbnNpb24gRWR1Y2F0aW9uG00uU2MuKEFncmljdWx0dXJlKSBBZ3Jvbm9teR9NLlNjLihBZ3JpY3VsdHVyZSkgU29pbCBTY2llbmNlP00uVGVjaC4gaW4gQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgYW5kIE1hY2hpbmUgTGVhcm5pbmcgKEFJL01MKTtNLlRlY2guIGluIEN5YmVyIFNlY3VyaXR5ICYgRGlnaXRhbCBGb3JlbnNpY3MgKENTREYpLShIVkVUKUBNLlRlY2guIGluIEN5YmVyIFNlY3VyaXR5IGFuZCBJbmNpZGVudCBNYW5hZ2VtZW50IOKAkyhTZWN1ckV5ZXMpCk1BIEVuZ2xpc2gQTUEgSGluZHUgU3R1ZGllcxRNQSBIaW5kdSBTdHVkaWVzIE9ETAtNQSBTYW5za3JpdAtNQSBZb2dhIE9ETBdNYXN0ZXIgT2YgUHVibGljIEhlYWx0aANNQkExTUJBIC0gKEFncmlidXNpbmVzcyBNYW5hZ2VtZW50LyBFbnRyZXByZW5ldXJzaGlwKRhNQkEgLSBHZW5lcmFsIE1hbmFnZW1lbnQHTUJBIE9ETANNQ0ElTUNBIChBcnRpZmljaWFsIEludGVsbGlnZW5jZSkgKEludGVsKRhNQ0EgKEN5YmVyIFNlY3VyaXR5KV9kbnUITUNBIENTQ0QHTUNBIEZPUztNQ0EgaW4gQ3liZXIgU2VjdXJpdHkgYW5kIEluY2lkZW50IE1hbmFnZW1lbnQgLSAoU2VjdXJFeWVzKShNQ0EgaW4gRGF0YSBTY2llbmNlIGFuZCBBbmFseXRpY3MtKEhWRVQpBE1jb20STVBBIC0gT2Rpc3NpIERhbmNlDk1QQSBPZGlzc2kgT0RMEFBCIEIuU2MuIE51cnNpbmcFUEdERk0rUEguIEQgSU4gU1BPUlRTIFNDSUVOQ0UgKFNQT1JUUyBQSFlTSU9MT0dZKQRQaC5EG1BoLkQgIGluIFRvdXJpc20gTWFuYWdlbWVudBxQaC5EIGluIEFjY291bnRpbmcgJiBGaW5hbmNlIFBoLkQgaW4gQWdyaS1CdXNpbmVzcyBNYW5hZ2VtZW50H1BoLkQgaW4gQUkgYW5kIE1hY2hpbmUgTGVhcm5pbmcfUGguRCBpbiBBeXVydmVkYSBpbiBQYW5jaGFrYXJtYSFQaC5EIGluIEF5dXJ2ZWRhIGluIFN3YXN0aGF2cml0dGEvUGguRCBpbiBBeXVydmVkYS0gIFNhbWhpdGEgU2lkZGhhbnRhICYgU2Fuc2tyaXQWUGguRCBpbiBBeXVydmVkYS0gQVRWQSBQaC5EIGluIEF5dXJ2ZWRhLSBLYXVtYXJhYmhyaXR5YR5QaC5EIGluIEF5dXJ2ZWRhLSBLYXlhY2hpa2l0c2EbUGguRCBpbiBBeXVydmVkYS0gUGFuY2hrYXJtIVBoLkQgaW4gQXl1cnZlZGEtIFJhY2hhbmEgU2hhcmVlcjFQaC5EIGluIEF5dXJ2ZWRhLSBSYXNhc2FzdHJhICYgQmhhaXNoYWp5YSBLYWxwYW5hHVBoLkQgaW4gQXl1cnZlZGEtIFJvZ2EgTmlkYW5hHlBoLkQgaW4gQXl1cnZlZGEtIFNoYWx5YXRhbnRyYRVQaC5EIGluIEJoYXJhdGFuYXR5YW0fUGguRCBpbiBDb21wdXRlciBTY2llbmNlICYgRW5nZxVQaC5EIGluIEN5YmVyc2VjdXJpdHkUUGguRCBpbiBEYXRhIFNjaWVuY2UbUGguRCBpbiBEaXNhc3RlciBNYW5hZ2VtZW50EVBoLkQgaW4gRWNvbm9taWNzD1BoLkQgaW4gRW5nbGlzaB1QaC5EIGluIEVudmlyb25tZW50YWwgU2NpZW5jZQ9QaC5EIGluIEZpbmFuY2UcUGguRCBpbiBGaW5hbmNpYWwgTWFuYWdlbWVudBpQaC5EIGluIEdlbmVyYWwgTWFuYWdlbWVudAtQaC5EIGluIEhDSQtQaC5EIGluIElPVA9QaC5EIGluIElUIE1nbXQOUGguRCBpbiBLYXRoYWsRUGguRCBpbiBNYXJrZXRpbmcTUGguRCBpbiBNYXRoZW1hdGljcxBQaC5EIGluIE9CICYgSFJNDlBoLkQgaW4gT2Rpc3NpD1BoLkQgaW4gUGh5c2ljcxJQaC5EIGluIFBoeXNpb2xvZ3kSUGguRCBpbiBQc3ljaG9sb2d5FVBoLmQgaW4gUHVibGljIEhlYWx0aBBQaC5EIGluIFNhbnNrcml0FlBoLkQgaW4gU29mdCBDb21wdXRpbmcrUEguRCBJTiBTUE9SVFMgU0NJRU5DRSAoUEhZU0lDQUwgRURVQ0FUSU9OKQxQaC5EIGluIFlvZ2EVUGguRCBpbiBZb2dpYyBTY2llbmNlElBoLkQgS3JpeWEgU2hhcmVlciVQb3N0IEdyYWR1YXRlIERpcGxvbWEgaW4gQ2hpcm9wcmFjdGljFZ4BATMCOTgBNAMxMDMDMTU3AzE2OQMxNzABNQE2ATcCOTUDMTU0ATgBOQI5NgIxMQIxMAI5NwIxMgIxMwIxNAIxNQIzMQMxNjcDMTY4AjI5AjQwAjM2AjQxAjc3Ajc4Ajc5AzEwMQIzMwMxNjMCMzQCMzcCMzgDMTUwAjM5AzE1MQI4MAMxNTICOTADMTA0Ajk5AjQyAjgxAjgyAzEwMAI0MwI4MwMxNTUDMTU2AjQ0AzEwMgI0NQI5MgI5MwI4OQI5NAMxNTMCODgCNDYCOTECODQCNDgCNDkCNTACNTECNTICNTMDMTY0AzE2NQMxNjYCNTQCODUCODYCNTUCNTYCNTcDMTcyAjU4AjU5AjYwAjYxAjYyAjYzAjY0AjY1AjY2AzEwNgI2NwMxMDcDMTczATECNjgCNjkDMTc3AjcwAjcyAjczAjcxAzE1OAI3NAI3NQMxNDYCNzYDMTA1AzE3MQMxNDkDMTc1AzE0OAMxNjADMTM4AzE2MQMxMzkDMTIyAzEyMQMxMTYDMTM2AzExNwMxMTgDMTMzAzEzNwMxMzIDMTM0AzEzMQMxNDEDMTIwAzE0NQMxNDADMTEzAzE0MwMxMTEDMTE0AzE1OQMxMjcDMTI4AzEzMAMxNDIDMTA5AzExOQMxMDgDMTIzAzEyNQMxMjQDMTEwAzExMgMxMjkDMTYyAzEyNgMxNDcDMTc2AzExNQMxNDQDMTM1AzE3NBQrA54BZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dkZAIpD2QWAmYPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50ZmQCLg9kFgJmD2QWAgIBDxYCHwcC/////w9kGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYSBSNjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJHJkb0FsbFNlbQUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRyZG9BbGxTZW0FIWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkcmRvU2VtMQUhY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRyZG9TZW0xBSFjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJHJkb1NlbTIFIWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkcmRvU2VtMgUhY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRyZG9TZW0zBSFjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJHJkb1NlbTMFIWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkcmRvU2VtNAUhY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRyZG9TZW00BSFjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJHJkb1NlbTUFIWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkcmRvU2VtNQUhY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRyZG9TZW02BSFjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJHJkb1NlbTYFIWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkcmRvU2VtNwUhY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRyZG9TZW03BSFjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJHJkb1NlbTgFIWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkcmRvU2VtOPdPyMwsjDRYt64VmhGVaBX2uqlH">
+</div>
+
+
+
+
+<script src="webresource.axd" type="text/javascript"></script>
+
+
+<script src="scriptresource.axd" type="text/javascript"></script>
+
+
+<script src="scriptresource.axd" type="text/javascript"></script>
+<script src="scriptresource.axd" type="text/javascript"></script>
+<script src="scriptresource.axd" type="text/javascript"></script>
+<script src="scriptresource.axd" type="text/javascript"></script>
+<script src="scriptresource.axd" type="text/javascript"></script>
+<script src="scriptresource.axd" type="text/javascript"></script>
+<script src="scriptresource.axd" type="text/javascript"></script>
+<script src="scriptresource.axd" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9CD3F920">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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">
+</div>
+            
+
+            <div id="header" class="clearfix">
+                <div class="slide">
+                    <div class="dark-mask">
+                    </div>
+                    <div id="owl-demo" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+                        <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 786px; left: 0px; display: block;"><div class="owl-item" style="width: 393px;"><div class="item">
+                            <img src="images/slide_1.jpg">
+                        </div></div></div></div>
+                       
+                    <div class="owl-controls" style="display: none;"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div></div></div></div>
+                </div>
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="cdn.e.srisriuniversity.edu.in/images/logo_white.png" alt="Sri Sri University"></a>
+                    </div>
+                    <div class="top-right">
+                        <div class="top-icon">
+                            <ul>
+                                <li><i class="icon ion-ios-search-strong"></i>
+                                    <div class="search">
+                                        <input type="text" placeholder="Search Here..." name="srch">
+                                        <input type="submit" value="ï’¤" name="sub">
+                                    </div>
+                                </li>
+                                <li class="notification"><i class="icon ion-ios-bell-outline"></i>
+                                    <div class="drp-this">
+                                        <h4>Notification</h4>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user-detail">
+                            <a href="#" class="usr-drp">
+                                <div class="usr-img">
+                                    <img id="ctl00_imgUser" src="handler/getimage.ashx" style="border-width:0px;">
+                                    
+                                </div>
+                                <div class="usr-name">
+                                    <span id="ctl00_lblUserName">Rohit Kumar Das</span><i class="icon ion-ios-arrow-down"></i>
+                                </div>
+                            </a>
+                            <div class="drp-this">
+                                <ul>
+                                    <li><a href="ImportantContacts.aspx">Important Contacts</a></li>
+                                    <li><a href="StudentMasterInfo.aspx">Profile</a></li>
+									<li><a href="StudentMasterInfo_New.aspx">Update Profile</a></li>
+                                    <li>
+                                        </li>
+                                    
+                                    <li><a href="ChangeStudentPassword.aspx">Change Password</a></li>
+                                      
+                                    
+                                    
+                                    <li>
+                                        
+                                        <a id="ctl00_lnkLogout" href="javascript:__doPostBack('ctl00$lnkLogout','')">Log Out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quotes text-center clearfix">
+                        <h2>
+                            <span id="ctl00_lblMarqueText">Best of East and West</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div id="sticky-anchor">
+            </div>
+            <div class="nav" id="sticky">
+				<div class="container">
+					<ul class="main-nav">
+						<li><a href="index.html">Dashboard</a></li>
+						<li><a href="attendance.html">Attendance</a></li>
+						<li><a href="econtent.html" class="active">E-Content</a></li>
+						<li><a href="javascript:void(0);">Exam</a>
+							<div class="drp-this">
+								<ul>
+									<li id="ctl00_liMuFinalShort"><a href="javascript:void(0);">Final Exam Registration</a></li>
+									<li id="ctl00_liMuRemedialShort"><a href="javascript:void(0);">Remedial Exam Registration</a></li>
+									<li><a href="javascript:void(0);">Up-Coming Exam / Hall Ticket</a></li>
+									<li><a href="javascript:void(0);">MID - Internal Result</a></li>
+									<li id="ctl00_lnkMUResult"><a href="javascript:void(0);">Final Result </a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="javascript:void(0);">Time Table</a>
+							<div class="drp-this">
+								<ul>
+									<li><a href="javascript:void(0);">Current Week Time-Table</a></li>
+									<li><a href="javascript:void(0);">Date Wise Time Table</a></li>
+									<li><a href="javascript:void(0);">Online Class</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="javascript:void(0);">Fees</a></li>
+						<li><a href="javascript:void(0);">Project Submission</a></li>
+						<li><a href="https://library.e.srisriuniversity.edu.in/" target="_blank">Library</a></li>
+						<li class="more"><a href="javascript:void(0);">More +</a></li>
+					</ul>
+							+</a></li>
+					</ul>
+				</div>
+				<div class="side-bar-overlay">
+				</div>
+				<div class="close-btn-top">
+					<i class="icon ion-ios-close-empty"></i>
+				</div>
+				<div class="side-bar vertical-scroll mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar" style=""><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 0px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+					<div class="side-logo">
+						<a href="index.html">
+							<img src="cdn.e.srisriuniversity.edu.in/images/logo_white.png" alt="Sri Sri University" class="mCS_img_loaded"></a>
+					</div>
+					<div class="side-nav">
+						<ul>
+							<li><a href="index.html">Dashboard</a></li>
+							<li><a href="attendance.html">Attendance</a></li>
+							<li><a href="econtent.html" class="active">E-Content(Download)</a></li>
+							<li class="drp-dwn"><a href="javascript:void(0);">Exam</a>
+								<div class="drp-this-inr">
+									<ul>
+										<li id="ctl00_liStudExamFormPS"><a href="StudentExamFormPS.aspx?Id=1">Final Exam Registration</a></li>
+										<li id="ctl00_liStudExamRemedialFormPS"><a href="StudentExamFormPS.aspx?Id=2">Remedial Exam Registration</a></li>
+										<li><a href="ExamHallTicket.aspx">Up-Coming Exam / Hall Ticket</a></li>
+										<li><a href="StudentResult.aspx">MID - Internal Result</a></li>
+										<li id="ctl00_liMUResult"><a href="FinalResult.aspx">Final Result </a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="drp-dwn"><a href="javascript:void(0);">Time Table</a>
+								<div class="drp-this-inr">
+									<ul>
+										<li><a href="StudentMasterTimeTable.aspx" target="_blank">Current Week Time-Table</a></li>
+										<li><a href="TimeTable.aspx">Date Wise Time Table</a></li>
+										<li><a href="LectureVideoes.aspx">Online Class</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="econtent.html">E-Content(Download)</a></li>
+							<li><a href="PrintFeesReceipt.aspx">Fees</a></li>
+							<li id="ctl00_li11"><a href="ProjectSubmission.aspx">Project Submission</a></li>
+							<li><a href="https://library.e.srisriuniversity.edu.in/" target="_blank">Library</a></li>
+							<li><a href="Holidays.aspx">Holiday List</a></li>
+							
+							<li><a href="https://helpdesk.e.srisriuniversity.edu.in/" target="_blank">Help Desk</a></li>
+							
+							
+
+
+							
+						</ul>
+					</div>
+				</div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+			</div>
+            <div class="imp-shrtcut" style="display:none">
+                <div class="container">
+                    <input type="hidden" name="ctl00$hdnMenuId" id="ctl00_hdnMenuId">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-3 col-sm-3">
+                                <div class="heading">
+                                    <h2>Important Shortcuts</h2>
+                                </div>
+                            </div>
+                            <div class="col-md-9 col-sm-9">
+                                <div class="owl-carousel owl-theme" id="shrtcut-slide" style="opacity: 0; display: block;">
+                                    <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 200px; left: 0px; display: block;"><div class="owl-item" style="width: 50px;"><div class="item">
+                                        <a href="VehicleRegP.aspx"><i class="icon ion-model-s"></i>
+                                            <h5>Vehicle Registration</h5>
+                                        </a>
+                                    </div></div><div class="owl-item" style="width: 50px;"><div class="item">
+                                        <a href="VehicleRegP.aspx"><i class="icon ion-model-s"></i>
+                                            <h5>Vehicle Registration</h5>
+                                        </a>
+                                    </div></div></div></div>
+                                    
+                                <div class="owl-controls" style="display: none;"><div class="owl-buttons"><div class="owl-prev">prev</div><div class="owl-next">next</div></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="MsgAlert">
+                <div id="MsgAlert" style="display: none;">
+                </div>
+            </div>
+            <div>
+                
+    <div id="main-content">
+        <div class="container min-height">
+            <div class="modal fade" id="divPopUpBackColor" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            
+                            <button type="button" class="close" data-dismiss="modal">
+                                Ã—</button>
+                            <h4 class="modal-title">Comments</h4>
+                        </div>
+                        <div class="modal-body clearfix">
+                            <div id="ctl00_ContentPlaceHolder1_UpPopUpBackColor1">
+	
+                                    <div class="col-md-12">
+                                        <div id="ctl00_ContentPlaceHolder1_trAddComment" class="form">
+                                            <div class="form-group">
+                                                <input name="ctl00$ContentPlaceHolder1$txtComments" type="text" id="ctl00_ContentPlaceHolder1_txtComments">
+                                                
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="submit" name="ctl00$ContentPlaceHolder1$btnSaveRemarks" value="Add" id="ctl00_ContentPlaceHolder1_btnSaveRemarks" class="btn btn-red">
+                                            </div>
+                                        </div>
+                                        <div id="ctl00_ContentPlaceHolder1_trDisComment" class="form">
+                                            <div id="ctl00_ContentPlaceHolder1_divComment" class="form-group">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="ctl00$ContentPlaceHolder1$hfTaskIdPopUp" id="ctl00_ContentPlaceHolder1_hfTaskIdPopUp" value="0">
+                                    <input name="ctl00$ContentPlaceHolder1$hidTitleID" type="hidden" id="ctl00_ContentPlaceHolder1_hidTitleID">
+                                    <input name="ctl00$ContentPlaceHolder1$hidLectureType" type="hidden" id="ctl00_ContentPlaceHolder1_hidLectureType">
+                                    <input name="ctl00$ContentPlaceHolder1$hidFilterType" type="hidden" id="ctl00_ContentPlaceHolder1_hidFilterType">
+                                    <input name="ctl00$ContentPlaceHolder1$hidStreamID" type="hidden" id="ctl00_ContentPlaceHolder1_hidStreamID">
+                                    <input name="ctl00$ContentPlaceHolder1$hidSemesterID" type="hidden" id="ctl00_ContentPlaceHolder1_hidSemesterID">
+                                    <input name="ctl00$ContentPlaceHolder1$hidDocumentTypeID" type="hidden" id="ctl00_ContentPlaceHolder1_hidDocumentTypeID">
+                                    <input name="ctl00$ContentPlaceHolder1$hidIsSearch" type="hidden" id="ctl00_ContentPlaceHolder1_hidIsSearch" value="0">
+                                
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ctl00_ContentPlaceHolder1_pnl1">
+	
+                    <div class="breadcrums">
+                        <ul>
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li><a href="javascript:void(0);" class="active">E-Content (Download)</a></li>
+                        </ul>
+                    </div>
+                    <div class="heading">
+                        <h2>E-Content (Download)</h2>
+                    </div>
+                    <div class="side-section">
+                        <div class="heading">
+                            <h2>Search</h2>
+                        </div>
+                        <div class="form">
+                            
+                                <div class="form-group">
+                                    <div class="inline-radio-chck">
+                                        <div class="block">
+                                            
+                                            <input name="lvgt" id="subject" value="Subject" class="same-clr" checked="checked" type="radio"><label for="subject">Subject</label>
+                                        </div>
+                                        <div class="block">
+                                            
+                                            <input name="lvgt" id="faculty" value="Faculty" class="same-clr" type="radio"><label for="faculty">Faculty</label>
+                                            <input type="hidden" name="ctl00$ContentPlaceHolder1$divSOrF" id="divSOrF" value="0">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input name="ctl00$ContentPlaceHolder1$txtSearch" type="text" id="txtSearch" placeholder="Search Subject/Topic" data-toggle="tooltip" title="" data-original-title="Search Subject/Topic" autocomplete="off">
+                                    
+                                    
+
+                                    <input name="ctl00$ContentPlaceHolder1$txtEmployee" type="text" id="txtEmployee" placeholder="Lecturer Name..." data-toggle="tooltip" title="" data-original-title="Lecturer Name..." autocomplete="off">
+                                    
+                                    
+
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <select name="ctl00$ContentPlaceHolder1$ddlStream" id="ctl00_ContentPlaceHolder1_ddlStream">
+		<option value="3">B.Arch</option>
+		<option value="98">B.Com(Hons)-3</option>
+		<option value="4">B.Com(Hons)-4</option>
+		<option value="103">B.com(Hons.)ODL</option>
+		<option value="157">B.Sc Data Science</option>
+		<option value="169">B.Sc. (Artificial Intelligence) with specialization in Animation &amp; Visual Effects</option>
+		<option value="170">B.SC. (COMPUTER SCIENCE) with specialization in AI Application</option>
+		<option value="5">B.Sc. (Hons.) Agribusiness Management</option>
+		<option value="6">B.Sc. (Hons.) Agriculture</option>
+		<option value="7">B.Sc. (Hons.) Computer Science</option>
+		<option value="95">B.Sc. (Hons.) Computer Science 3</option>
+		<option value="154">B.Sc. (Hons.) Computer Science 3 YEAR FOS</option>
+		<option value="8">B.Sc. (Hons.) Food, Nutrition and Dietetics</option>
+		<option value="9">B.Sc. (Hons.) Forensic Science Specialization: Digital Forensic &amp; Cyber Forensic</option>
+		<option value="96">B.Sc. (Hons.) Forensic Science Specialization: Digital Forensic &amp; Cyber Forensic (HVET)</option>
+		<option value="11">B.Sc. (Hons.) Horticulture</option>
+		<option value="10">B.Sc. (Hons.) Optometry Technology (Apprentice Embedded)</option>
+		<option value="97">B.Sc. in Yoga 3</option>
+		<option value="12">B.Sc. in Yoga 4</option>
+		<option value="13">B.Sc. Nursing</option>
+		<option value="14">B.Sc. Osteopathy</option>
+		<option value="15">B.Sc.(Hons.) Psychology (Contemplative Studies)-4 Year</option>
+		<option value="31">B.TECH IN CSE (SPECIALIZATION IN DS)</option>
+		<option value="167">B.Tech. Electrical Engineering with specialization in AI and EV</option>
+		<option value="168">B.Tech. Electrical Engineering with specialization in AI and Renewable Energy</option>
+		<option value="29">B.Tech. in CSE (Computer Science &amp; Engineering)</option>
+		<option value="40">B.Tech. in CSE-Specialization in AI &amp; ML (IBM)</option>
+		<option value="36">B.Tech. in CSE-Specialization in Animation and VFX(Internship Based)-(Hitech Animation)</option>
+		<option value="41">B.Tech. in CSE-Specialization in Cyber Security and Cyber Defense (Cyber Dojo &amp; TCS)</option>
+		<option value="77">B.Tech. in Electrical Engineering- Specialization in Artificial Intelligence &amp; Electrical Vehicle (Electrical) and Renewable Energy (L&amp;T and Intel)</option>
+		<option value="78">B.Tech. in Electronics and Communication Engineering- Specialization in Artificial Intelligence, VLSI Chip Design</option>
+		<option value="79">B.Tech. in ME- Specialization in AI, Robotics &amp; Automation and EV (Mechanical)</option>
+		<option value="101">BA (Hons.) English 3</option>
+		<option value="33">BA (Hons.) English 4</option>
+		<option value="163">BACHELOR OF FINE ARTS</option>
+		<option value="34">Bachelor of Fine Arts (Animation)</option>
+		<option value="37">Bachelor of Interior Design (BID)</option>
+		<option value="38">Bachelor of Naturopathy and Yogic Science (BNYS)</option>
+		<option value="150">Bachelor of Performing Arts (Hindustani Vocal) â€“ 3 Years</option>
+		<option value="39">Bachelor of Physical Education and Sports (BPES)</option>
+		<option value="151">Bachelor of Physical Education and Sports â€“ 3 Years</option>
+		<option value="80">BACHELOR OF PHYSIOTHERAPY (BPT)</option>
+		<option value="152">BACHELOR OF VISUAL ARTS WITH SPECIALIZATION IN PAINTINGS</option>
+		<option value="90">BAMS</option>
+		<option value="104">BBA ODL</option>
+		<option value="99">BBA-3</option>
+		<option value="42">BBA-4</option>
+		<option value="81">BCA (Artificial Intelligence)</option>
+		<option value="82">BCA (Cyber Security)</option>
+		<option value="100">BCA 3</option>
+		<option value="43">BCA 4</option>
+		<option value="83">BCA in Data Science and Analytics â€“(HVET)</option>
+		<option value="155">BFA (Applied Arts)</option>
+		<option value="156">BFA (Painting)</option>
+		<option value="44">BPA Hindustani Vocal</option>
+		<option value="102">BPA Odissi Dance 3</option>
+		<option value="45">BPA Odissi Dance 4</option>
+		<option value="92">BSC (HONS.) DS</option>
+		<option value="93">BSC (HONS.) ES</option>
+		<option value="89">BSC (HONS.) PHYSICS</option>
+		<option value="94">Bsc Psychology- 3 Year</option>
+		<option value="153">DIPLOMA IN PROCTOLOGY</option>
+		<option value="88">Doctor of Philosophy</option>
+		<option value="46">GNM</option>
+		<option value="91">iMBA</option>
+		<option value="84">Integrated M.Sc. in Osteopathy</option>
+		<option value="48">M.A. Yoga</option>
+		<option value="49">M.Sc. (Agriculture) Agricultural Statistics</option>
+		<option value="50">M.Sc. (Agriculture) Entomology</option>
+		<option value="51">M.Sc. (Agriculture) Genetics and Plant Breeding</option>
+		<option value="52">M.Sc. (Agriculture) Plant Pathology</option>
+		<option value="53">M.Sc. (Horticulture)</option>
+		<option value="164">M.Sc. Agriculture Agroforestry</option>
+		<option value="165">M.Sc. Agriculture Crop Physiology</option>
+		<option value="166">M.Sc. Agriculture Plant Biochemistry</option>
+		<option value="54">M.Sc. Exercise And Sports Physiology</option>
+		<option value="85">M.Sc. in Artificial Intelligence and Machine Learning (AI/ML)-(HVET)</option>
+		<option value="86">M.Sc. in Cyber Security &amp; Digital Forensics (CSDF)-(HVET)</option>
+		<option value="55">M.Sc. Osteopathy</option>
+		<option value="56">M.Sc. Psychology (Contemplative Studies)</option>
+		<option value="57">M.Sc. Yoga</option>
+		<option value="172">M.Sc. Yoga Therapy</option>
+		<option value="58">M.Sc.(Agriculture) Agricultural Economics</option>
+		<option value="59">M.Sc.(Agriculture) Agricultural Extension Education</option>
+		<option value="60">M.Sc.(Agriculture) Agronomy</option>
+		<option value="61">M.Sc.(Agriculture) Soil Science</option>
+		<option value="62">M.Tech. in Artificial Intelligence and Machine Learning (AI/ML)</option>
+		<option value="63">M.Tech. in Cyber Security &amp; Digital Forensics (CSDF)-(HVET)</option>
+		<option value="64">M.Tech. in Cyber Security and Incident Management â€“(SecurEyes)</option>
+		<option value="65">MA English</option>
+		<option value="66">MA Hindu Studies</option>
+		<option value="106">MA Hindu Studies ODL</option>
+		<option value="67">MA Sanskrit</option>
+		<option value="107">MA Yoga ODL</option>
+		<option value="173">Master Of Public Health</option>
+		<option value="1">MBA</option>
+		<option value="68">MBA - (Agribusiness Management/ Entrepreneurship)</option>
+		<option value="69">MBA - General Management</option>
+		<option value="177">MBA ODL</option>
+		<option value="70">MCA</option>
+		<option value="72">MCA (Artificial Intelligence) (Intel)</option>
+		<option value="73">MCA (Cyber Security)_dnu</option>
+		<option value="71">MCA CSCD</option>
+		<option value="158">MCA FOS</option>
+		<option value="74">MCA in Cyber Security and Incident Management - (SecurEyes)</option>
+		<option value="75">MCA in Data Science and Analytics-(HVET)</option>
+		<option value="146">Mcom</option>
+		<option value="76">MPA - Odissi Dance</option>
+		<option value="105">MPA Odissi ODL</option>
+		<option value="171">PB B.Sc. Nursing</option>
+		<option value="149">PGDFM</option>
+		<option value="175">PH. D IN SPORTS SCIENCE (SPORTS PHYSIOLOGY)</option>
+		<option value="148">Ph.D</option>
+		<option value="160">Ph.D  in Tourism Management</option>
+		<option value="138">Ph.D in Accounting &amp; Finance</option>
+		<option value="161">Ph.D in Agri-Business Management</option>
+		<option value="139">Ph.D in AI and Machine Learning</option>
+		<option value="122">Ph.D in Ayurveda in Panchakarma</option>
+		<option value="121">Ph.D in Ayurveda in Swasthavritta</option>
+		<option value="116">Ph.D in Ayurveda-  Samhita Siddhanta &amp; Sanskrit</option>
+		<option value="136">Ph.D in Ayurveda- ATVA</option>
+		<option value="117">Ph.D in Ayurveda- Kaumarabhritya</option>
+		<option value="118">Ph.D in Ayurveda- Kayachikitsa</option>
+		<option value="133">Ph.D in Ayurveda- Panchkarm</option>
+		<option value="137">Ph.D in Ayurveda- Rachana Shareer</option>
+		<option value="132">Ph.D in Ayurveda- Rasasastra &amp; Bhaishajya Kalpana</option>
+		<option value="134">Ph.D in Ayurveda- Roga Nidana</option>
+		<option value="131">Ph.D in Ayurveda- Shalyatantra</option>
+		<option value="141">Ph.D in Bharatanatyam</option>
+		<option value="120">Ph.D in Computer Science &amp; Engg</option>
+		<option value="145">Ph.D in Cybersecurity</option>
+		<option value="140">Ph.D in Data Science</option>
+		<option value="113">Ph.D in Disaster Management</option>
+		<option value="143">Ph.D in Economics</option>
+		<option value="111">Ph.D in English</option>
+		<option value="114">Ph.D in Environmental Science</option>
+		<option value="159">Ph.D in Finance</option>
+		<option value="127">Ph.D in Financial Management</option>
+		<option value="128">Ph.D in General Management</option>
+		<option value="130">Ph.D in HCI</option>
+		<option value="142">Ph.D in IOT</option>
+		<option value="109">Ph.D in IT Mgmt</option>
+		<option value="119">Ph.D in Kathak</option>
+		<option value="108">Ph.D in Marketing</option>
+		<option value="123">Ph.D in Mathematics</option>
+		<option value="125">Ph.D in OB &amp; HRM</option>
+		<option value="124">Ph.D in Odissi</option>
+		<option value="110">Ph.D in Physics</option>
+		<option value="112">Ph.D in Physiology</option>
+		<option value="129">Ph.D in Psychology</option>
+		<option value="162">Ph.d in Public Health</option>
+		<option value="126">Ph.D in Sanskrit</option>
+		<option value="147">Ph.D in Soft Computing</option>
+		<option value="176">PH.D IN SPORTS SCIENCE (PHYSICAL EDUCATION)</option>
+		<option value="115">Ph.D in Yoga</option>
+		<option value="144">Ph.D in Yogic Science</option>
+		<option value="135">Ph.D Kriya Shareer</option>
+		<option value="174">Post Graduate Diploma in Chiropractic</option>
+
+	</select>
+                                </div>
+                                <div class="form-group radio-grps">
+                                    <div class="inpt">
+                                        <div class="block">
+                                            <input id="ctl00_ContentPlaceHolder1_rdoAllSem" type="radio" name="ctl00$ContentPlaceHolder1$rdoSem" value="rdoAllSem"><label for="all">All</label>
+                                        </div>
+                                        <div class="block">
+                                            <input id="ctl00_ContentPlaceHolder1_rdoSem1" type="radio" name="ctl00$ContentPlaceHolder1$rdoSem" value="rdoSem1"><label for="semester-1">Semester-1</label>
+                                        </div>
+                                        <div class="block">
+                                            <input id="ctl00_ContentPlaceHolder1_rdoSem2" type="radio" name="ctl00$ContentPlaceHolder1$rdoSem" value="rdoSem2"><label for="semester-2">Semester-2</label>
+                                        </div>
+                                        <div class="block">
+                                            <input id="ctl00_ContentPlaceHolder1_rdoSem3" type="radio" name="ctl00$ContentPlaceHolder1$rdoSem" value="rdoSem3"><label for="semester-3">Semester-3</label>
+                                        </div>
+                                        <div class="block">
+                                            <input id="ctl00_ContentPlaceHolder1_rdoSem4" type="radio" name="ctl00$ContentPlaceHolder1$rdoSem" value="rdoSem4"><label for="semester-4">Semester-4</label>
+                                        </div>
+                                        <div class="block">
+                                            <input id="ctl00_ContentPlaceHolder1_rdoSem5" type="radio" name="ctl00$ContentPlaceHolder1$rdoSem" value="rdoSem5"><label for="semester-5">Semester-5
+                                            </label>
+                                        </div>
+                                        <div class="block">
+                                            <input id="ctl00_ContentPlaceHolder1_rdoSem6" type="radio" name="ctl00$ContentPlaceHolder1$rdoSem" value="rdoSem6"><label for="semester-6">Semester-6</label>
+                                        </div>
+                                        <div class="block">
+                                            <input id="ctl00_ContentPlaceHolder1_rdoSem7" type="radio" name="ctl00$ContentPlaceHolder1$rdoSem" value="rdoSem7"><label for="semester-7">Semester-7</label>
+                                        </div>
+                                        <div class="block">
+                                            <input id="ctl00_ContentPlaceHolder1_rdoSem8" type="radio" name="ctl00$ContentPlaceHolder1$rdoSem" value="rdoSem8"><label for="semester-8">Semester-8</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="ctl00$ContentPlaceHolder1$btnSearch" value="Search" onclick="getCurTitle();" id="ctl00_ContentPlaceHolder1_btnSearch" class="btn btn-red btn-small">
+                                </div>
+                                <div class="form-group">
+                                    <span id="ctl00_ContentPlaceHolder1_lblError" style="color:Red;"></span>
+                                </div>
+                            
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="tab-design">
+                            <div class="col-md-12 center-col">
+                                <div id="ctl00_ContentPlaceHolder1_grdTitleUpdatePanel1">
+		
+                                        <div id="ctl00_ContentPlaceHolder1_pnl2">
+			
+                                            
+                                                    <ul class="nav nav-tabs" role="tablist" id="lnkTitle">
+                                                        <li role="presentation" class="active"><a href="javascript:void(0);" data-course="DAT">DAT (Data Analytics)</a></li>
+                                                        <li role="presentation"><a href="javascript:void(0);" data-course="CMTS">CMTS (Cloud &amp; Mobile Tech)</a></li>
+                                                        <li role="presentation"><a href="javascript:void(0);" data-course="EVTA">EVTA (EV Technology)</a></li>
+                                                        <li role="presentation"><a href="javascript:void(0);" data-course="MOL">MOL (Optimization Lab)</a></li>
+                                                        <li role="presentation"><a href="javascript:void(0);" data-course="WT">WT (Web Tech)</a></li>
+                                                        <li role="presentation"><a href="javascript:void(0);" data-course="DM">DM (Discrete Math)</a></li>
+                                                    </ul>
+                                                
+                                        
+		</div>
+                                    
+	</div>
+                                <div class="clearfix">
+                                </div>
+                                <div class="tab-content">
+                                    <div class="tab-pane active">
+                                        <h4>
+                                            <span id="ctl00_ContentPlaceHolder1_spnHeaderTitle" text=""></span><span id="ctl00_ContentPlaceHolder1_spnHeaderDocType" text=""></span>
+                                        </h4>
+                                        <div class="tab-design-inr">
+                                            <div id="ctl00_ContentPlaceHolder1_listDocumentTypeUpdatePanel1">
+                                                <ul class="nav nav-pills" id="lnkDocType" style="margin-bottom: 15px;">
+                                                    <li class="active"><a href="javascript:void(0);">All Documents</a></li>
+                                                    <li><a href="javascript:void(0);">Lecture Notes</a></li>
+                                                    <li><a href="javascript:void(0);">Syllabus</a></li>
+                                                    <li><a href="javascript:void(0);">Lab Manual</a></li>
+                                                    <li><a href="javascript:void(0);">Assignments</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-content">
+                                                <div id="assign" class="tab-pane active">
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-12" style="margin-bottom: 15px;">
+                                                            <div class="atten-sub bus-stops" style="border: 1px solid #e2e8f0; border-radius: 6px; padding: 12px; background: #fff;">
+                                                                <div class="stp-detail" style="width: 75%;">
+                                                                    <h5 style="color: #6e2815; font-weight: 600;"><i class="icon ion-ios-paper-outline"></i> Unit 1: Foundations &amp; Pipeline Architecture</h5>
+                                                                    <p class="text-primary" style="font-size: 12px;"><i class="icon ion-ios-person-outline"></i> Faculty: RLG &bull; 18 Oct 2026 &bull; PDF (2.4 MB)</p>
+                                                                </div>
+                                                                <div class="fac-status" style="width: 25%; text-align: right;">
+                                                                    <a href="javascript:alert('Downloading courseware material: Unit 1 Foundations & Pipeline Architecture (PDF)...');" class="status btn-success" style="display:inline-block; padding: 6px 12px; text-decoration:none;">
+                                                                        <i class="icon ion-ios-cloud-download-outline"></i> Download
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-12" style="margin-bottom: 15px;">
+                                                            <div class="atten-sub bus-stops" style="border: 1px solid #e2e8f0; border-radius: 6px; padding: 12px; background: #fff;">
+                                                                <div class="stp-detail" style="width: 75%;">
+                                                                    <h5 style="color: #6e2815; font-weight: 600;"><i class="icon ion-ios-paper-outline"></i> Unit 2: Algorithmic Optimization &amp; Heuristics</h5>
+                                                                    <p class="text-primary" style="font-size: 12px;"><i class="icon ion-ios-person-outline"></i> Faculty: PKM &bull; 26 Oct 2026 &bull; PDF (3.8 MB)</p>
+                                                                </div>
+                                                            <div class="fac-status" style="width: 25%; text-align: right;">
+                                                                    <a href="javascript:alert('Downloading courseware material: Unit 2 Algorithmic Optimization (PDF)...');" class="status btn-success" style="display:inline-block; padding: 6px 12px; text-decoration:none;">
+                                                                        <i class="icon ion-ios-cloud-download-outline"></i> Download
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-12" style="margin-bottom: 15px;">
+                                                            <div class="atten-sub bus-stops" style="border: 1px solid #e2e8f0; border-radius: 6px; padding: 12px; background: #fff;">
+                                                                <div class="stp-detail" style="width: 75%;">
+                                                                    <h5 style="color: #6e2815; font-weight: 600;"><i class="icon ion-ios-paper-outline"></i> Complete Practical Lab Manual &amp; Experiment Guide</h5>
+                                                                    <p class="text-primary" style="font-size: 12px;"><i class="icon ion-ios-person-outline"></i> Faculty: RN &bull; 01 Nov 2026 &bull; PDF (4.1 MB)</p>
+                                                                </div>
+                                                            <div class="fac-status" style="width: 25%; text-align: right;">
+                                                                    <a href="javascript:alert('Downloading practical lab manual (PDF)...');" class="status btn-success" style="display:inline-block; padding: 6px 12px; text-decoration:none;">
+                                                                        <i class="icon ion-ios-cloud-download-outline"></i> Download
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-12" style="margin-bottom: 15px;">
+                                                            <div class="atten-sub bus-stops" style="border: 1px solid #e2e8f0; border-radius: 6px; padding: 12px; background: #fff;">
+                                                                <div class="stp-detail" style="width: 75%;">
+                                                                    <h5 style="color: #6e2815; font-weight: 600;"><i class="icon ion-ios-paper-outline"></i> Mid-Term Question Bank &amp; Self-Assessment Key</h5>
+                                                                    <p class="text-primary" style="font-size: 12px;"><i class="icon ion-ios-person-outline"></i> Faculty: SJA &bull; 04 Nov 2026 &bull; PDF (1.9 MB)</p>
+                                                                </div>
+                                                            <div class="fac-status" style="width: 25%; text-align: right;">
+                                                                    <a href="javascript:alert('Downloading question bank assessment key (PDF)...');" class="status btn-success" style="display:inline-block; padding: 6px 12px; text-decoration:none;">
+                                                                        <i class="icon ion-ios-cloud-download-outline"></i> Download
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                
+</div>
+        </div>
+    </div><input type="hidden" value="1" id="hiddenInputToUpdateATBuffer_CommonToolkitScripts" name="hiddenInputToUpdateATBuffer_CommonToolkitScripts"></form>
+    
+
+            </div>
+            <div id="footer">
+                <div class="ftr-light">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="ftr-logo">
+                                    <a href="attendance.html">
+                                        <img src="cdn.e.srisriuniversity.edu.in/images/logo_white.png" alt="Sri Sri University"></a>
+                                </div>
+                                <div class="social">
+                                    <ul>
+                                       <li>
+    <a href="https://www.facebook.com/srisriu/" target="_blank">
+        <span class="icon ion-social-facebook-outline"></span>
+    </a>
+</li>
+<li>
+    <a href="https://x.com/SriSriU" target="_blank">
+        <span class="icon ion-social-twitter-outline"></span>
+    </a>
+</li>
+<li>
+    <a href="https://www.instagram.com/srisriu/" target="_blank">
+        <span class="icon ion-social-instagram-outline"></span>
+    </a>
+</li>
+<li>
+    <a href="https://www.linkedin.com/school/srisriuniversity" target="_blank">
+        <span class="icon ion-social-linkedin-outline"></span> <!-- You can keep the icon name or switch to `linkedin-outline` -->
+    </a>
+</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ftr-dark">
+                    <div class="container">
+                        <div class="row">
+<div class="col-md-12" style="color: white;">
+    Sri Sri University <br>
+    Â© Copyright - <span id="year" style="color: white;">2026</span>. All Rights Reserved by Sri Sri University
+</div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+
+
+    
+    
+    <div id="AlertDiv" class="AlertStyle">
+        <img id="Img1" src="images/marwadiloading.gif" alt="Please Wait..." height="16">
+    </div>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="inc/bootstrap_select2/js/select2.js" type="text/javascript"></script>
+    <script src="js/jquery_input_file_text.js" type="text/javascript"></script>
+    <script src="js/design_common.js" type="text/javascript"></script>
+    
+    
+
+
+<ul id="ctl00_ContentPlaceHolder1_AutoCompleteExtender2_completionListElem" class="autocomplete_completionListElement" style="position: absolute;"></ul><ul id="ctl00_ContentPlaceHolder1_AutoCompleteExtender1_completionListElem" class="autocomplete_completionListElement" style="position: absolute;"></ul><audio class="audio-output" style="display: none;"></audio><div id="volume-booster-visusalizer">
+                    <div class="sound">
+                        <div class="sound-icon"></div>
+                        <div class="sound-wave sound-wave_one"></div>
+                        <div class="sound-wave sound-wave_two"></div>
+                        <div class="sound-wave sound-wave_three"></div>
+                    </div>
+                    <div class="segments-box">
+                        <div data-range="1-20" class="segment"><span></span></div>
+                        <div data-range="21-40" class="segment"><span></span></div>
+                        <div data-range="41-60" class="segment"><span></span></div>
+                        <div data-range="61-80" class="segment"><span></span></div>
+                        <div data-range="81-100" class="segment"><span></span></div>
+                    </div>
+                </div>
+<script src="js/dev_demo.js"></script>
+<script src="js/inline_scripts_econtent.js"></script>
+</body></html>
