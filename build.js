@@ -29,8 +29,8 @@ requiredHtmlFiles.forEach(file => {
 
 // 2. Verify synthetic demonstration values
 const attendanceHtml = fs.readFileSync(path.join(ROOT_DIR, 'attendance.html'), 'utf8');
-if (!attendanceHtml.includes('51 %')) {
-    errors.push('attendance.html does NOT contain required demonstration attendance value: "51 %"');
+if (!attendanceHtml.includes('68 %')) {
+    errors.push('attendance.html does NOT contain required demonstration attendance value: "68 %"');
 }
 
 const devDemoJs = fs.readFileSync(path.join(ROOT_DIR, 'js', 'dev_demo.js'), 'utf8');

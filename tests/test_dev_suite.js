@@ -76,8 +76,8 @@ async function runTests() {
 
         // --- SUITE 2: Synthetic Values Verification ---
         console.log('\nSuite 2: Synthetic Data Invariants');
-        // Attendance value: 46 -> 51
-        assert(attRes.body.includes('51 %'), 'Attendance dashboard displays required 51% attendance');
+        // Attendance value: updated to 68%
+        assert(attRes.body.includes('68 %'), 'Attendance dashboard displays required 68% attendance');
         
         // CMTS Theory (green): 39 -> 71
         const parsedData = JSON.parse(chartJson.d);

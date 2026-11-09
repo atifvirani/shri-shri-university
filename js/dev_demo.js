@@ -35,7 +35,7 @@
         // Required Demonstration Target
         demonstration: {
             mode: 'demonstration',
-            attendancePercentage: '51 %',
+            attendancePercentage: '68 %',
             previousAttendance: '46 %',
             subjects: GROUND_TRUTH_SUBJECTS,
             lab: GROUND_TRUTH_LAB,
@@ -401,12 +401,19 @@
 
     // 6. Enforce Synthetic Attendance Metrics on Page Load
     function enforceDemonstrationMetrics() {
-        // Enforce top attendance count badge
-        var countEl = document.querySelector('.attendance-count');
-        if (countEl) {
-            // Apply the demonstration target value: 51 %
+        // Enforce top attendance count badge across all elements
+        var countEls = document.querySelectorAll('.attendance-count');
+        countEls.forEach(function (countEl) {
             countEl.textContent = SYNTHETIC_DATA[activeMode].attendancePercentage;
-        }
+        });
+
+        // Enforce dashboard status button if present
+        var statusBtns = document.querySelectorAll('.status.btn-success');
+        statusBtns.forEach(function (btn) {
+            if (btn.textContent.indexOf('Active') !== -1) {
+                btn.textContent = SYNTHETIC_DATA[activeMode].attendancePercentage.replace(' ', '') + ' Active';
+            }
+        });
 
         // Ensure Chart.js is properly populated with CMTS Theory = 71
         if (document.getElementById('attendance-chart')) {
