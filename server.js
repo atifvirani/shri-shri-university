@@ -58,11 +58,11 @@ const SYNTHETIC_DATA = {
         theory: [
             56, 0, 26, 55, 0, 0,
             0, 0, 13, 38, 0,
-            43, 54, 0, 47, 71, // CMTS Theory = 71 (Green) Demonstration Target
+            43, 54, 0, 47, 68, // CMTS Theory = 68 (Green) Demonstration Target
             48, 0, 45, 0, 35, 0, 0
         ],
         workshop: new Array(23).fill(0),
-        attendancePercentage: "68 %"
+        attendancePercentage: "51 %"
     },
     baseline: {
         labels: GROUND_TRUTH_SUBJECTS,
@@ -197,7 +197,7 @@ if (require.main === module) {
         console.log(` - Attendance Page: http://localhost:${actualPort}/attendance.html`);
         console.log(` - E-Content Page:  http://localhost:${actualPort}/econtent.html`);
         console.log(` - Synthetic API:   http://localhost:${actualPort}/Attendance.aspx/ChartData`);
-        console.log(` Mode: Isolated Demonstration (CMTS Theory = 71, Attendance = 68%)`);
+        console.log(` Mode: Isolated Demonstration (CMTS Theory = 68, Attendance = 51%)`);
         console.log(`=================================================================`);
     });
 

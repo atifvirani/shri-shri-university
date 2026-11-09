@@ -29,13 +29,13 @@ requiredHtmlFiles.forEach(file => {
 
 // 2. Verify synthetic demonstration values
 const attendanceHtml = fs.readFileSync(path.join(ROOT_DIR, 'attendance.html'), 'utf8');
-if (!attendanceHtml.includes('68 %')) {
-    errors.push('attendance.html does NOT contain required demonstration attendance value: "68 %"');
+if (!attendanceHtml.includes('51 %')) {
+    errors.push('attendance.html does NOT contain required demonstration attendance value: "51 %"');
 }
 
 const devDemoJs = fs.readFileSync(path.join(ROOT_DIR, 'js', 'dev_demo.js'), 'utf8');
-if (!devDemoJs.includes('cmtsTheoryValue: 71')) {
-    errors.push('dev_demo.js does NOT contain required CMTS Theory demonstration value: 71');
+if (!devDemoJs.includes('cmtsTheoryValue: 68')) {
+    errors.push('dev_demo.js does NOT contain required CMTS Theory demonstration value: 68');
 }
 
 const designCommonJs = fs.readFileSync(path.join(ROOT_DIR, 'js', 'design_common.js'), 'utf8');

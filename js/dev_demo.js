@@ -35,17 +35,17 @@
         // Required Demonstration Target
         demonstration: {
             mode: 'demonstration',
-            attendancePercentage: '68 %',
+            attendancePercentage: '51 %',
             previousAttendance: '46 %',
             subjects: GROUND_TRUTH_SUBJECTS,
             lab: GROUND_TRUTH_LAB,
             theory: [
                 56, 0, 26, 55, 0, 0,
                 0, 0, 13, 38, 0,
-                43, 54, 0, 47, 71, // CMTS Theory = 71 (Green)
+                43, 54, 0, 47, 68, // CMTS Theory = 68 (Green)
                 48, 0, 45, 0, 35, 0, 0
             ],
-            cmtsTheoryValue: 71,
+            cmtsTheoryValue: 68,
             cmtsTheoryPrev: 39,
             workshop: new Array(23).fill(0)
         },
@@ -63,7 +63,7 @@
                 48, 0, 45, 0, 35, 0, 0
             ],
             cmtsTheoryValue: 39,
-            cmtsTheoryPrev: 71,
+            cmtsTheoryPrev: 68,
             workshop: new Array(23).fill(0)
         }
     };

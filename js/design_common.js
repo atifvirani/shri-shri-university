@@ -765,7 +765,7 @@ if (document.getElementById("attendance-chart")) {
             [
                 56, 0, 26, 55, 0, 0,
                 0, 0, 13, 38, 0,
-                43, 54, 0, 47, 71,
+                43, 54, 0, 47, 68,
                 48, 0, 45, 0, 35, 0, 0
             ],
             new Array(23).fill(0)

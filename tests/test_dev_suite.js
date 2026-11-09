@@ -76,16 +76,16 @@ async function runTests() {
 
         // --- SUITE 2: Synthetic Values Verification ---
         console.log('\nSuite 2: Synthetic Data Invariants');
-        // Attendance value: updated to 68%
-        assert(attRes.body.includes('68 %'), 'Attendance dashboard displays required 68% attendance');
+        // Attendance value: updated to 51%
+        assert(attRes.body.includes('51 %'), 'Attendance dashboard displays required 51% attendance');
         
-        // CMTS Theory (green): 39 -> 71
+        // CMTS Theory (green): updated to 68
         const parsedData = JSON.parse(chartJson.d);
         const subjects = parsedData[0];
         const theoryData = parsedData[2];
         const cmtsIndex = subjects.indexOf('CMTS');
         assert(cmtsIndex !== -1, 'CMTS is present in chart subject labels');
-        assert(theoryData[cmtsIndex] === 71, `CMTS Theory value is 71 (found: ${theoryData[cmtsIndex]})`);
+        assert(theoryData[cmtsIndex] === 68, `CMTS Theory value is 68 (found: ${theoryData[cmtsIndex]})`);
 
         // Check green color configuration for Theory dataset
         const designCommon = fs.readFileSync(path.join(__dirname, '../js/design_common.js'), 'utf8');
