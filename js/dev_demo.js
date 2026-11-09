@@ -453,13 +453,51 @@
         }
     }
 
-    // 8. Initialize on DOM ready
+    // 8. Enforce Dynamic Real Portal Dates & Blank Schedules
+    function enforceDynamicDatesAndBlankYesterday() {
+        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var now = new Date();
+        var yest = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+
+        function fmtDate(d) {
+            var day = ('0' + d.getDate()).slice(-2);
+            var m = months[d.getMonth()];
+            var y = d.getFullYear();
+            return day + ' ' + m + ' ' + y;
+        }
+
+        var todayStr = fmtDate(now);
+        var yestStr = fmtDate(yest);
+
+        // Update Today date across all matching elements
+        var todayEls = document.querySelectorAll('#lblTodayDate, .aten-yes-tdy .col-md-6:last-child .date-inr');
+        todayEls.forEach(function (el) {
+            el.textContent = todayStr;
+        });
+
+        // Update Yesterday date across all matching elements
+        var yestEls = document.querySelectorAll('#lblYesterdayDate, .aten-yes-tdy .col-md-6:first-child .date-inr');
+        yestEls.forEach(function (el) {
+            el.textContent = yestStr;
+        });
+
+        // Ensure both Yesterday and Today timetable item lists are completely blank
+        var lists = document.querySelectorAll('#ulYesterdayList, #ulTodayList, .aten-yes-tdy ul');
+        lists.forEach(function (ul) {
+            while (ul.firstChild) {
+                ul.removeChild(ul.firstChild);
+            }
+        });
+    }
+
+    // 9. Initialize on DOM ready
     function init() {
         injectDevBanner();
         setupDemoLogin();
         setupDemoLogout();
         enforceDemonstrationMetrics();
         setupMobileFabMenu();
+        enforceDynamicDatesAndBlankYesterday();
     }
 
     if (document.readyState === 'loading') {

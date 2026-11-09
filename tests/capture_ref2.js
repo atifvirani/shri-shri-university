@@ -30,3 +30,4 @@ const { chromium } = require(path.join(__dirname, '..', 'node_modules', 'playwri
     console.error(err);
     process.exit(1);
 });
+
